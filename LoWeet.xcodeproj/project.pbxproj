@@ -16,6 +16,7 @@
 		27B9A15119C7219E00621AFF /* TweetLocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A15019C7219E00621AFF /* TweetLocationsTableViewController.swift */; };
 		27B9A15319C721F800621AFF /* MapLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A15219C721F800621AFF /* MapLocationsViewController.swift */; };
 		27B9A15519C734BA00621AFF /* NewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A15419C734BA00621AFF /* NewLocationViewController.swift */; };
+		27B9A15719C73A5E00621AFF /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A15619C73A5E00621AFF /* LocationData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		27B9A15019C7219E00621AFF /* TweetLocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetLocationsTableViewController.swift; sourceTree = "<group>"; };
 		27B9A15219C721F800621AFF /* MapLocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationsViewController.swift; sourceTree = "<group>"; };
 		27B9A15419C734BA00621AFF /* NewLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLocationViewController.swift; sourceTree = "<group>"; };
+		27B9A15619C73A5E00621AFF /* LocationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				27B9A15219C721F800621AFF /* MapLocationsViewController.swift */,
 				27B9A15019C7219E00621AFF /* TweetLocationsTableViewController.swift */,
 				27B9A15419C734BA00621AFF /* NewLocationViewController.swift */,
+				27B9A15619C73A5E00621AFF /* LocationData.swift */,
 				27B9A13219C71CF700621AFF /* Main.storyboard */,
 				27B9A13519C71CF700621AFF /* Images.xcassets */,
 				27B9A13719C71CF700621AFF /* LaunchScreen.xib */,
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B9A15719C73A5E00621AFF /* LocationData.swift in Sources */,
 				27B9A15319C721F800621AFF /* MapLocationsViewController.swift in Sources */,
 				27B9A15119C7219E00621AFF /* TweetLocationsTableViewController.swift in Sources */,
 				27B9A14F19C7217900621AFF /* TweetLocationTableViewCell.swift in Sources */,
