@@ -56,42 +56,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1uF-Pb-qiq">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vNv-lN-VNs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="1uF-Pb-qiq" secondAttribute="trailing" id="Ney-OE-OYd"/>
-                            <constraint firstItem="1uF-Pb-qiq" firstAttribute="leading" secondItem="zyg-3h-WPJ" secondAttribute="leading" id="PDR-xo-Dpf"/>
-                            <constraint firstAttribute="bottom" secondItem="1uF-Pb-qiq" secondAttribute="bottom" id="W0M-zs-ez4"/>
-                            <constraint firstItem="1uF-Pb-qiq" firstAttribute="top" secondItem="zyg-3h-WPJ" secondAttribute="top" id="ub5-Gp-rRs"/>
+                            <constraint firstItem="vNv-lN-VNs" firstAttribute="leading" secondItem="zyg-3h-WPJ" secondAttribute="leading" id="HLP-nm-0c3"/>
+                            <constraint firstAttribute="bottom" secondItem="vNv-lN-VNs" secondAttribute="bottom" id="IKo-yF-mCj"/>
+                            <constraint firstAttribute="trailing" secondItem="vNv-lN-VNs" secondAttribute="trailing" id="dlH-xd-jyM"/>
+                            <constraint firstItem="vNv-lN-VNs" firstAttribute="top" secondItem="zyg-3h-WPJ" secondAttribute="top" id="nAI-lD-pGO"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="1uF-Pb-qiq"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="Ney-OE-OYd"/>
-                                <exclude reference="PDR-xo-Dpf"/>
-                                <exclude reference="W0M-zs-ez4"/>
-                                <exclude reference="ub5-Gp-rRs"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="1uF-Pb-qiq"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="Ney-OE-OYd"/>
-                                <include reference="PDR-xo-Dpf"/>
-                                <include reference="W0M-zs-ez4"/>
-                                <include reference="ub5-Gp-rRs"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
-                        <outlet property="locationsMapView" destination="1uF-Pb-qiq" id="Sof-UJ-FVv"/>
+                        <outlet property="locationsMapView" destination="vNv-lN-VNs" id="Rk4-1t-N4O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Pn-FS-YcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -107,13 +85,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetLocaitonCell" rowHeight="78" id="bBR-GI-zBn" customClass="TweetLocationTableViewCell" customModule="LoWeet" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetLocationCell" rowHeight="78" id="bBR-GI-zBn" customClass="TweetLocationTableViewCell" customModule="LoWeet" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bBR-GI-zBn" id="1KS-Sb-eIH">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFJ-Tn-YNQ">
-                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe9-GM-bIq">
+                                            <rect key="frame" x="42" y="8" width="68" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -121,8 +99,8 @@
                                                 <rect key="frame" x="44" y="8" width="67" height="21"/>
                                             </variation>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Some kind of tweet asdlgkjasldfkjasldkjfalsdkjf;la" translatesAutoresizingMaskIntoConstraints="NO" id="pZN-wJ-2ev">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Some kind of tweet asdlgkjasldfkjasldkjfalsdkjf;la" translatesAutoresizingMaskIntoConstraints="NO" id="Hhy-N2-y0d">
+                                            <rect key="frame" x="37" y="27" width="198" height="50"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -130,8 +108,8 @@
                                                 <rect key="frame" x="13" y="27" width="197" height="50"/>
                                             </variation>
                                         </textView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NG1-C8-mE0">
-                                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5f-hO-nXd">
+                                            <rect key="frame" x="530" y="17" width="30" height="30"/>
                                             <state key="normal" title="Edit">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
@@ -139,28 +117,14 @@
                                                 <rect key="frame" x="332" y="8" width="30" height="30"/>
                                             </variation>
                                             <connections>
-                                                <action selector="editTweetLocation:" destination="bBR-GI-zBn" eventType="touchUpInside" id="H0G-Hi-87T"/>
+                                                <action selector="editTweetLocation:" destination="bBR-GI-zBn" eventType="touchUpInside" id="lNt-X8-cLd"/>
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <variation key="default">
-                                        <mask key="subviews">
-                                            <exclude reference="GFJ-Tn-YNQ"/>
-                                            <exclude reference="pZN-wJ-2ev"/>
-                                            <exclude reference="NG1-C8-mE0"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="widthClass=regular">
-                                        <mask key="subviews">
-                                            <include reference="GFJ-Tn-YNQ"/>
-                                            <include reference="pZN-wJ-2ev"/>
-                                            <include reference="NG1-C8-mE0"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="locationLabel" destination="GFJ-Tn-YNQ" id="wdc-uP-kUO"/>
-                                    <outlet property="tweetTextView" destination="pZN-wJ-2ev" id="AqY-sO-s4a"/>
+                                    <outlet property="locationLabel" destination="Oe9-GM-bIq" id="K48-lE-S40"/>
+                                    <outlet property="tweetTextView" destination="Hhy-N2-y0d" id="J08-M4-sSi"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -224,7 +188,6 @@
                                 </state>
                                 <connections>
                                     <action selector="saveNewLocation" destination="BbG-xa-Mem" eventType="touchUpInside" id="Hl8-Lj-YR1"/>
-                                    <action selector="saveNewLocation:" destination="BbG-xa-Mem" eventType="touchUpInside" id="q6S-fL-VTV"/>
                                 </connections>
                             </button>
                         </subviews>

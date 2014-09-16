@@ -13,6 +13,13 @@ class TweetLocationsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nc = NSNotificationCenter.defaultCenter()
+        
+        nc.addObserverForName("tweetLocationsUpdated", object: nil, queue: NSOperationQueue.mainQueue()) { (notification: NSNotification!) -> Void in
+            self.tableView.reloadData()
+            
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -39,7 +46,7 @@ class TweetLocationsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("tweetLocationCell", forIndexPath: indexPath) as TweetLocationTableViewCell
         var tweetLocation = LocationData.mainData().locations[indexPath.row]
-        if let tweet = tweetLocation["tweet"] {
+        if let tweet: AnyObject = tweetLocation["tweet"] {
            
             cell.tweetTextView.text = tweet as String
             

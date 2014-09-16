@@ -21,6 +21,8 @@ class TweetLocationTableViewCell: UITableViewCell {
 
     @IBAction func editTweetLocation(sender: AnyObject) {
     }
+
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
