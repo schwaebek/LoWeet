@@ -34,7 +34,7 @@ class MapLocationsViewController: UIViewController {
     func markUpTheMap() {
         self.locationsMapView.removeAnnotations(self.locationsMapView.annotations)
         
-        for location in LocationData.mainData().locations {
+        for location in LocationData.mainData().tweetLocations {
             var marker = Marker()
             var coordinate = CLLocationCoordinate2D(latitude:location["latitude"]! as CLLocationDegrees, longitude:location["longitude"]! as CLLocationDegrees)
             marker.setCoordinate(coordinate)

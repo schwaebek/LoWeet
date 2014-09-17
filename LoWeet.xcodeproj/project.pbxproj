@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2778932219C9E23D00DB1DB1 /* FoundLocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2778932119C9E23D00DB1DB1 /* FoundLocationsTableViewController.swift */; };
 		27B9A12D19C71CF700621AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A12C19C71CF700621AFF /* AppDelegate.swift */; };
 		27B9A13419C71CF700621AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B9A13219C71CF700621AFF /* Main.storyboard */; };
 		27B9A13619C71CF700621AFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B9A13519C71CF700621AFF /* Images.xcassets */; };
@@ -18,7 +19,6 @@
 		27B9A15519C734BA00621AFF /* NewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A15419C734BA00621AFF /* NewLocationViewController.swift */; };
 		27B9A15719C73A5E00621AFF /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A15619C73A5E00621AFF /* LocationData.swift */; };
 		27B9A19119C76E5D00621AFF /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9A19019C76E5D00621AFF /* Marker.swift */; };
-		27E772EE19C9C0A200DBEEFC /* SwifteriOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E772ED19C9C0A200DBEEFC /* SwifteriOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27E772FA19C9C0A300DBEEFC /* SwifteriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E772F919C9C0A300DBEEFC /* SwifteriOSTests.swift */; };
 		27E772FD19C9C0A300DBEEFC /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E772E919C9C0A200DBEEFC /* SwifteriOS.framework */; };
 		27E772FE19C9C0A300DBEEFC /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27E772E919C9C0A200DBEEFC /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -26,9 +26,8 @@
 		27E7732819C9C1D700DBEEFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27E7730A19C9C1D700DBEEFC /* Info.plist */; };
 		27E7732919C9C1D700DBEEFC /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7730B19C9C1D700DBEEFC /* JSON.swift */; };
 		27E7732A19C9C1D700DBEEFC /* NSURL+Swifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7730C19C9C1D700DBEEFC /* NSURL+Swifter.swift */; };
-		27E7732B19C9C1D700DBEEFC /* String+Swifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7730D19C9C1D700DBEEFC /* String+Swifter.swift */; };
 		27E7732C19C9C1D700DBEEFC /* Swifter-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E7730E19C9C1D700DBEEFC /* Swifter-Bridging-Header.h */; };
-		27E7732D19C9C1D700DBEEFC /* Swifter.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E7730F19C9C1D700DBEEFC /* Swifter.h */; };
+		27E7732D19C9C1D700DBEEFC /* Swifter.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E7730F19C9C1D700DBEEFC /* Swifter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27E7732E19C9C1D700DBEEFC /* Swifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7731019C9C1D700DBEEFC /* Swifter.swift */; };
 		27E7732F19C9C1D700DBEEFC /* SwifterAccountsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7731119C9C1D700DBEEFC /* SwifterAccountsClient.swift */; };
 		27E7733019C9C1D700DBEEFC /* SwifterAppOnlyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7731219C9C1D700DBEEFC /* SwifterAppOnlyClient.swift */; };
@@ -52,6 +51,7 @@
 		27E7734219C9C1D700DBEEFC /* SwifterTrends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7732419C9C1D700DBEEFC /* SwifterTrends.swift */; };
 		27E7734319C9C1D700DBEEFC /* SwifterTweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7732519C9C1D700DBEEFC /* SwifterTweets.swift */; };
 		27E7734419C9C1D700DBEEFC /* SwifterUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7732619C9C1D700DBEEFC /* SwifterUsers.swift */; };
+		27E7734519C9C72B00DBEEFC /* String+Swifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7730D19C9C1D700DBEEFC /* String+Swifter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +100,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2778932119C9E23D00DB1DB1 /* FoundLocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundLocationsTableViewController.swift; sourceTree = "<group>"; };
 		27B9A12719C71CF700621AFF /* LoWeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoWeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B9A12B19C71CF700621AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27B9A12C19C71CF700621AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +217,7 @@
 				27B9A14E19C7217900621AFF /* TweetLocationTableViewCell.swift */,
 				27B9A15219C721F800621AFF /* MapLocationsViewController.swift */,
 				27B9A15019C7219E00621AFF /* TweetLocationsTableViewController.swift */,
+				2778932119C9E23D00DB1DB1 /* FoundLocationsTableViewController.swift */,
 				27B9A15419C734BA00621AFF /* NewLocationViewController.swift */,
 				27B9A15619C73A5E00621AFF /* LocationData.swift */,
 				27B9A19019C76E5D00621AFF /* Marker.swift */,
@@ -331,7 +333,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				27E7732C19C9C1D700DBEEFC /* Swifter-Bridging-Header.h in Headers */,
-				27E772EE19C9C0A200DBEEFC /* SwifteriOS.h in Headers */,
 				27E7732D19C9C1D700DBEEFC /* Swifter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27B9A15719C73A5E00621AFF /* LocationData.swift in Sources */,
+				2778932219C9E23D00DB1DB1 /* FoundLocationsTableViewController.swift in Sources */,
 				27B9A15319C721F800621AFF /* MapLocationsViewController.swift in Sources */,
 				27B9A15119C7219E00621AFF /* TweetLocationsTableViewController.swift in Sources */,
 				27B9A14F19C7217900621AFF /* TweetLocationTableViewCell.swift in Sources */,
@@ -522,7 +524,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				27E7732719C9C1D700DBEEFC /* Dictionary+Swifter.swift in Sources */,
-				27E7732B19C9C1D700DBEEFC /* String+Swifter.swift in Sources */,
 				27E7733A19C9C1D700DBEEFC /* SwifterOAuthClient.swift in Sources */,
 				27E7733119C9C1D700DBEEFC /* SwifterAuth.swift in Sources */,
 				27E7732E19C9C1D700DBEEFC /* Swifter.swift in Sources */,
@@ -540,6 +541,7 @@
 				27E7732919C9C1D700DBEEFC /* JSON.swift in Sources */,
 				27E7734019C9C1D700DBEEFC /* SwifterSuggested.swift in Sources */,
 				27E7732F19C9C1D700DBEEFC /* SwifterAccountsClient.swift in Sources */,
+				27E7734519C9C72B00DBEEFC /* String+Swifter.swift in Sources */,
 				27E7734419C9C1D700DBEEFC /* SwifterUsers.swift in Sources */,
 				27E7733919C9C1D700DBEEFC /* SwifterMessages.swift in Sources */,
 				27E7734319C9C1D700DBEEFC /* SwifterTweets.swift in Sources */,
@@ -752,6 +754,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Swifter/Swifter-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -771,6 +774,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Swifter/Swifter-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -846,6 +850,7 @@
 				27E7730219C9C0A300DBEEFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27E7730719C9C0A300DBEEFC /* Build configuration list for PBXNativeTarget "SwifteriOSTests" */ = {
 			isa = XCConfigurationList;
@@ -854,6 +859,7 @@
 				27E7730419C9C0A300DBEEFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
